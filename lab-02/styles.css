@@ -1,0 +1,40 @@
+nav {
+  background-color: #529DA2;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+nav a {
+  background-color: #C0C0C0;
+  color: #000000;
+  padding: 0.5em;
+  margin: 0.3em;
+  text-decoration: none;
+
+/*
+   transition declaration changes the background
+   colour oin the time specified. When a:hover is
+   used the declaration changes to the colour specified
+   in the hover for the time given.
+*/
+  transition: background-color 0.7s;
+}
+
+nav a:hover {
+  background-color: yellow;
+}
+
+header, section {
+  overflow: auto;
+  background-color: #C0C0C0;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+}

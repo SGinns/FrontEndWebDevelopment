@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 500px) {
+  #menuToggler {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+#menuToggler {
+  display: flex;
+  flex-direction: column;
+	background-color: #C0C0C0;
+  flex-shrink: 0;
+  font-size: 150%;
+}
+
+nav  {
+  display: none;
+  flex-direction: column;
+	background-color: #C0C0C0;
+  flex-shrink: 0;
+  font-size: 120%;
+  /* padding: 0.4em */
+}
+
+nav a {
+  background-color: #C0C0C0;
+  color: #000000;
+  padding: 0.4em;
+  text-decoration: none;
+  font-family: sans-serif;
+
+/*
+   transition declaration changes the background
+   colour oin the time specified. When a:hover is
+   used the declaration changes to the colour specified
+   in the hover for the time given.
+*/
+  transition: background-color 0.7s;
+}
+
+nav a:hover {
+  background-color: yellow;
+}
+
+nav.open {
+  display: flex;
+}
